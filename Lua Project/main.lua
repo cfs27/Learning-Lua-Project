@@ -1,8 +1,8 @@
 -- attempting to make a simple circle that moves with WASD
 
 local x, y = 400, 300 -- inital position
-local speed = 200  -- pixels per sec
-local radius = 27
+local speed = 950  -- pixels per sec
+local radius = 20
 
 function love.update(dt)
     local windowWidth = love.graphics.getWidth()
@@ -25,5 +25,5 @@ end
 
 function love.draw()
     love.graphics.setColor(0.6, 0.1, 0.1)
-    love.graphics.circle("fill", x, y, 27) -- the circle is filled in with a radius of 27 
+    love.graphics.circle("fill", x, y, 20) -- the circle is filled in with a radius of 27 
 end
