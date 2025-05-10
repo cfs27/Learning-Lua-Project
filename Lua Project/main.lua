@@ -4,6 +4,10 @@ local x, y = 400, 300 -- inital position
 local speed = 950  -- pixels per sec
 local radius = 20
 
+function love.load()
+    love.window.setMode(0, 0, {fullscreen = true})
+end
+
 function love.update(dt)
     local windowWidth = love.graphics.getWidth()
     local windowHeight = love.graphics.getHeight()
