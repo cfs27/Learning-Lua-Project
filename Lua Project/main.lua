@@ -8,6 +8,13 @@ function love.load()
     love.window.setMode(0, 0, {fullscreen = true})
 end
 
+function love.keypressed(key)
+    if key == "f11" then
+        local isFullscreen = love.window.getFullscreen()
+        love.window.setFullscreen(not isFullscreen)
+    end
+end
+
 function love.update(dt)
     local windowWidth = love.graphics.getWidth()
     local windowHeight = love.graphics.getHeight()
